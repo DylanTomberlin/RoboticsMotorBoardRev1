@@ -154,6 +154,70 @@
 <text x="-2.22" y="2.15" size="1.27" layer="27">&gt;Value</text>
 <text x="-2.46" y="-1.57" size="1.27" layer="25">&gt;Name</text>
 </package>
+<package name="SOIC3.9">
+<description>&lt;b&gt;Description:&lt;/b&gt; This footprint is a 3.9mm SOIC device.  It was created for the Microchip MCP2561 CAN transciever.  Foot print based on recommendation of datasheet.  Part of Husky Robotics 2017-2018 arm motor boards.</description>
+<wire x1="-3.175" y1="-1.5" x2="3.175" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.5" x2="3.175" y2="1.5" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.5" x2="-3.175" y2="1.5" width="0.127" layer="21"/>
+<smd name="1" x="-1.905" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="-0.635" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="3" x="0.635" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="1.905" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="1.905" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="0.635" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="7" x="-0.635" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="8" x="-1.905" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<wire x1="-3.175" y1="-1.5" x2="-3.175" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-0.635" x2="-2.54" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="-2.54" y1="0" x2="-3.175" y2="0.635" width="0.127" layer="21" curve="90"/>
+<wire x1="-3.175" y1="0.635" x2="-3.175" y2="1.5" width="0.127" layer="21"/>
+<text x="5.08" y="1.27" size="1.27" layer="25">&gt;Name</text>
+<text x="5.08" y="-1.27" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="3SIP">
+<description>&lt;b&gt;Description: &lt;/b&gt;This footprint is for Murata Power Solutions OKI-78SR DC-DC power regulator modulator.  It has an outline for the horizontal mount configuration.  Based on recommended pad positions on datasheet.</description>
+<pad name="1" x="2.54" y="0" drill="0.6" shape="square"/>
+<pad name="2" x="0" y="0" drill="0.6" shape="square"/>
+<pad name="3" x="-2.54" y="0" drill="0.6" shape="square"/>
+<wire x1="-5.461" y1="-1.524" x2="5.461" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="5.461" y1="-1.524" x2="5.461" y2="15.494" width="0.127" layer="21"/>
+<wire x1="5.461" y1="15.494" x2="-5.461" y2="15.494" width="0.127" layer="21"/>
+<wire x1="-5.461" y1="15.494" x2="-5.461" y2="-1.524" width="0.127" layer="21"/>
+<text x="-2.54" y="11.43" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.54" y="7.62" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="FULL_CAN">
+<description>&lt;b&gt;Description:&lt;/b&gt; This is a generic layout for a Full Can package.
+&lt;p&gt;
+	&lt;b&gt;Issues to address:&lt;/b&gt;
+	&lt;ul&gt;
+		&lt;li&gt;These pads seem to be on the top, but shouldn't they be on the bottom?
+		&lt;li&gt;Hole diameter needs to be checked
+		&lt;li&gt;Double check overall units. I was assuming inches, but the data sheet I was referencing didn't specify units.
+	&lt;/ul&gt;
+&lt;/p&gt;</description>
+<wire x1="-10.16" y1="-6.35" x2="8.89" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.127" layer="51"/>
+<wire x1="8.89" y1="6.35" x2="-8.89" y2="6.35" width="0.127" layer="51"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="-8.89" y1="6.35" x2="-10.16" y2="5.08" width="0.127" layer="51" curve="90"/>
+<wire x1="10.16" y1="5.08" x2="8.89" y2="6.35" width="0.127" layer="51" curve="90"/>
+<wire x1="8.89" y1="-6.35" x2="10.16" y2="-5.08" width="0.127" layer="51" curve="90"/>
+<wire x1="-10.16" y1="-6.35" x2="8.89" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.127" layer="21"/>
+<wire x1="8.89" y1="6.35" x2="-8.89" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="6.35" x2="-10.16" y2="5.08" width="0.127" layer="21" curve="90"/>
+<wire x1="10.16" y1="5.08" x2="8.89" y2="6.35" width="0.127" layer="21" curve="90"/>
+<wire x1="8.89" y1="-6.35" x2="10.16" y2="-5.08" width="0.127" layer="21" curve="90"/>
+<circle x="-8.89" y="-5.08" radius="0.635" width="0.127" layer="21"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.6" shape="square"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.6" shape="square"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.6" shape="square"/>
+<pad name="8" x="7.62" y="3.81" drill="0.6" shape="square"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CY8C4247AZI-L485">
@@ -227,6 +291,45 @@
 <pin name="P1.6" x="-20.32" y="38.1" visible="pin" length="short" rot="R270"/>
 <text x="-5.08" y="5.08" size="1.778" layer="95">&gt;Name</text>
 <text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="MCP2561">
+<description>&lt;b&gt;Description:&lt;/b&gt; This schematic is for the Microchip MCP2561 CAN transciever.  Created for the UW husky robotics team 2017-2018 as part of the arm motor board.  &lt;b&gt;It has not be tested.&lt;/b&gt;</description>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<pin name="TXD" x="-12.7" y="10.16" visible="pin" length="middle" direction="out"/>
+<pin name="RXD" x="-12.7" y="5.08" visible="pin" length="middle" direction="in"/>
+<pin name="CANL" x="-12.7" y="0" length="middle"/>
+<pin name="CANH" x="-12.7" y="-5.08" length="middle"/>
+<pin name="STBY" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="VSS" x="12.7" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD" x="12.7" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="SPLIT" x="12.7" y="-7.62" length="middle" rot="R180"/>
+</symbol>
+<symbol name="OKI-78SR">
+<wire x1="-12.7" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="20.32" width="0.254" layer="94"/>
+<wire x1="2.54" y1="20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="20.32" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
+<pin name="INPUT+" x="-10.16" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="OUTPUT+" x="0" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND" x="-5.08" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<text x="-12.7" y="25.4" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="22.86" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="GENERIC_CRYSTAL_OSCILLATOR">
+<description>&lt;b&gt;Description:&lt;/b&gt; Generic crystal oscillator pinout, with some having a special function pin, others having not connection on that pin.  Created for Husky Robotics team 2017-2018, part of the arm motor board.</description>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<pin name="OUTPUT" x="-17.78" y="2.54" visible="pin" length="middle" direction="out"/>
+<pin name="FUNCTION" x="-17.78" y="-2.54" visible="pin" length="middle"/>
+<pin name="VDD" x="17.78" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="17.78" y="-2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;Name</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -317,6 +420,65 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="MCP2561-SOIC">
+<gates>
+<gate name="G$1" symbol="MCP2561" x="2.54" y="7.62"/>
+</gates>
+<devices>
+<device name="SOIC" package="SOIC3.9">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="SPLIT" pad="5"/>
+<connect gate="G$1" pin="STBY" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OKI-78SR">
+<description>&lt;b&gt;Description:&lt;/b&gt; This device is the Murata Power Solutions OKI-78SR DC-DC power regulator module, horizontal mount configuration.  Created for Husky Robotics Team 2017-2018, part of Arm Motor Board.</description>
+<gates>
+<gate name="G$1" symbol="OKI-78SR" x="-22.86" y="5.08"/>
+</gates>
+<devices>
+<device name="3SIP" package="3SIP">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT+" pad="1"/>
+<connect gate="G$1" pin="OUTPUT+" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GENERIC_OSCILLATOR">
+<description>&lt;b&gt;Description: &lt;/b&gt; A generic full can oscillator based on Abracon full dip crystal oscillators.  Created for the husky robotics team 2017-2018, part of the arm motor board.</description>
+<gates>
+<gate name="G$1" symbol="GENERIC_CRYSTAL_OSCILLATOR" x="-12.7" y="10.16"/>
+</gates>
+<devices>
+<device name="GENERIC_FULL_CAN_OSCILLATOR" package="FULL_CAN">
+<connects>
+<connect gate="G$1" pin="FUNCTION" pad="1"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="OUTPUT" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -330,11 +492,14 @@
 </classes>
 <parts>
 <part name="U1" library="HuskyRobotics2017-18" deviceset="CY8C4247AZI-L485" device="TQFN"/>
+<part name="U$1" library="HuskyRobotics2017-18" deviceset="MCP2561-SOIC" device="SOIC"/>
+<part name="U$2" library="HuskyRobotics2017-18" deviceset="OKI-78SR" device="3SIP"/>
+<part name="U$4" library="HuskyRobotics2017-18" deviceset="GENERIC_OSCILLATOR" device="GENERIC_FULL_CAN_OSCILLATOR"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="20.32" y="-58.42" size="1.778" layer="91">CAN</text>
+<text x="35.56" y="-48.26" size="1.778" layer="91">CAN</text>
 <text x="-22.86" y="-50.8" size="1.778" layer="91">JTAG</text>
 <text x="-83.82" y="88.9" size="1.778" layer="91">Each motor has 3 encoder or 1 analog input, 2 limit switches, and 1 pwm output. Analog or Encoder mode is controlled by DIP switch.</text>
 <text x="-12.7" y="-68.58" size="1.778" layer="91">Analog POTs</text>
@@ -352,9 +517,13 @@
 <text x="-81.28" y="17.78" size="1.778" layer="91">Motor 3 Encoder Inputs</text>
 <text x="-78.74" y="-7.62" size="1.778" layer="91">Motor 4 Encoder Inputs</text>
 <text x="-86.36" y="45.72" size="1.778" layer="91">LEDs can be connected to some odd GPIOs</text>
+<text x="78.74" y="38.1" size="1.778" layer="91">24V Rail</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="0" y="0"/>
+<instance part="U$1" gate="G$1" x="68.58" y="-68.58"/>
+<instance part="U$2" gate="G$1" x="109.22" y="35.56"/>
+<instance part="U$4" gate="G$1" x="83.82" y="-25.4"/>
 </instances>
 <busses>
 <bus name="B$1">
@@ -427,18 +596,6 @@
 </bus>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P7.0"/>
-<wire x1="22.86" y1="-38.1" x2="22.86" y2="-53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P7.1"/>
-<wire x1="25.4" y1="-38.1" x2="25.4" y2="-53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="B$1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P4.6"/>
@@ -624,6 +781,105 @@
 <segment>
 <pinref part="U1" gate="G$1" pin="P5.0"/>
 <wire x1="-7.62" y1="-38.1" x2="-7.62" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P7.1"/>
+<pinref part="U$1" gate="G$1" pin="TXD"/>
+<wire x1="25.4" y1="-38.1" x2="25.4" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-58.42" x2="55.88" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P7.0"/>
+<pinref part="U$1" gate="G$1" pin="RXD"/>
+<wire x1="22.86" y1="-38.1" x2="22.86" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-63.5" x2="55.88" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="CANL"/>
+<wire x1="55.88" y1="-68.58" x2="33.02" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-68.58" x2="33.02" y2="-114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="CANH"/>
+<wire x1="55.88" y1="-73.66" x2="40.64" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-73.66" x2="40.64" y2="-114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VCCD"/>
+<wire x1="38.1" y1="7.62" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="7.62" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VDDIO"/>
+<wire x1="45.72" y1="12.7" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VDDD"/>
+<wire x1="45.72" y1="7.62" x2="45.72" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="2.54" x2="38.1" y2="2.54" width="0.1524" layer="91"/>
+<junction x="45.72" y="7.62"/>
+<pinref part="U1" gate="G$1" pin="VDDA@56"/>
+<wire x1="45.72" y1="2.54" x2="45.72" y2="0" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="0" x2="38.1" y2="0" width="0.1524" layer="91"/>
+<junction x="45.72" y="2.54"/>
+<pinref part="U1" gate="G$1" pin="VDDA@11"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-2.54" x2="38.1" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="45.72" y="0"/>
+<pinref part="U$2" gate="G$1" pin="OUTPUT+"/>
+<wire x1="109.22" y1="27.94" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="7.62" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="VDD"/>
+<wire x1="101.6" y1="-22.86" x2="109.22" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-22.86" x2="109.22" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-22.86" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
+<junction x="109.22" y="7.62"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VSSA@10"/>
+<wire x1="38.1" y1="-7.62" x2="43.18" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-7.62" x2="43.18" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VSSA@57"/>
+<wire x1="43.18" y1="-5.08" x2="38.1" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-5.08" x2="43.18" y2="5.08" width="0.1524" layer="91"/>
+<junction x="43.18" y="-5.08"/>
+<pinref part="U1" gate="G$1" pin="VSSD"/>
+<wire x1="43.18" y1="5.08" x2="38.1" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VSSIO"/>
+<wire x1="43.18" y1="5.08" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="10.16" x2="38.1" y2="10.16" width="0.1524" layer="91"/>
+<junction x="43.18" y="5.08"/>
+<wire x1="43.18" y1="-5.08" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="104.14" y1="-5.08" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<wire x1="101.6" y1="-27.94" x2="104.14" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-27.94" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="104.14" y="-5.08"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="INPUT+"/>
+<wire x1="99.06" y1="27.94" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="20.32" x2="83.82" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="20.32" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="OUTPUT"/>
+<pinref part="U1" gate="G$1" pin="D+/P13.0"/>
+<wire x1="66.04" y1="-22.86" x2="38.1" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-22.86" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

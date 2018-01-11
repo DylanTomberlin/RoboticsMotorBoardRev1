@@ -1,5 +1,5 @@
 [Eagle]
-Version="08 04 03"
+Version="08 05 02"
 Platform="Windows"
 Globals="Globals"
 Desktop="Desktop"
@@ -348,14 +348,12 @@ UsedLibraryUrn="urn:adsk.eagle:library:174"
 UsedLibraryUrn="urn:adsk.eagle:library:175"
 UsedLibraryUrn="urn:adsk.eagle:library:176"
 UsedLibraryUrn="urn:adsk.eagle:library:177"
-UsedLibrary="C:/EAGLE 8.4.3/lbr/HuskyRobotics2017-18.lbr"
+UsedLibrary="C:/Users/Dylan/Documents/GitHub/HuskyRoboticsElectronicsEagleLibrary/HuskyRobotics2017-18.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 1919 1139"
-State=1
 Number=0
 
 [Desktop]
-Screen="2736 1824"
+Screen="3840 1080"
 Window="Win_1"
