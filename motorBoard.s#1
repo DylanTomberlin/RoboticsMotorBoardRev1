@@ -1908,6 +1908,7 @@ Source: www.kingbright.com</description>
 <text x="-195.58" y="53.34" size="5.08" layer="95">Motor3</text>
 <text x="-132.08" y="-45.72" size="5.08" layer="95">Motor4</text>
 <text x="86.36" y="-71.12" size="1.778" layer="98">Program/Debug Header!</text>
+<text x="139.7" y="-142.24" size="1.778" layer="98">Need resistor Values!</text>
 </plain>
 <instances>
 <instance part="PSOC4200L" gate="G$1" x="0" y="0"/>

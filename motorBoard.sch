@@ -1914,7 +1914,7 @@ Source: www.kingbright.com</description>
 <instance part="PSOC4200L" gate="G$1" x="0" y="0"/>
 <instance part="U$1" gate="G$1" x="50.8" y="-114.3"/>
 <instance part="U$3" gate="G$1" x="-2.54" y="-106.68" rot="R90"/>
-<instance part="OSCILLATOR_SG-646PCE" gate="G$1" x="81.28" y="-25.4"/>
+<instance part="OSCILLATOR_SG-646PCE" gate="G$1" x="152.4" y="-48.26"/>
 <instance part="LED1" gate="G$1" x="114.3" y="-114.3"/>
 <instance part="OKI-78SR-3.3" gate="G$1" x="124.46" y="12.7"/>
 <instance part="OKI-78SR-5" gate="G$1" x="157.48" y="12.7"/>
@@ -1922,8 +1922,8 @@ Source: www.kingbright.com</description>
 <instance part="GND25" gate="1" x="119.38" y="-12.7"/>
 <instance part="+3V14" gate="G$1" x="134.62" y="12.7"/>
 <instance part="P+13" gate="1" x="170.18" y="10.16"/>
-<instance part="+3V15" gate="G$1" x="109.22" y="-17.78"/>
-<instance part="GND26" gate="1" x="99.06" y="-30.48"/>
+<instance part="+3V15" gate="G$1" x="180.34" y="-40.64"/>
+<instance part="GND26" gate="1" x="170.18" y="-53.34"/>
 <instance part="+3V16" gate="G$1" x="48.26" y="17.78"/>
 <instance part="GND27" gate="1" x="58.42" y="-10.16"/>
 <instance part="P+14" gate="1" x="55.88" y="5.08"/>
@@ -2058,14 +2058,6 @@ Source: www.kingbright.com</description>
 <wire x1="-10.16" y1="-88.9" x2="-7.62" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="PSOC4200L" gate="G$1" pin="P5.0"/>
 <wire x1="-7.62" y1="-88.9" x2="-7.62" y2="-38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CLK" class="0">
-<segment>
-<pinref part="PSOC4200L" gate="G$1" pin="D+/P13.0"/>
-<wire x1="63.5" y1="-22.86" x2="38.1" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="-22.86" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="OSCILLATOR_SG-646PCE" gate="G$1" pin="OUTPUT"/>
 </segment>
 </net>
 <net name="CANRX" class="0">
@@ -2445,14 +2437,14 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="+3V15" gate="G$1" pin="+3V3"/>
-<wire x1="109.22" y1="-22.86" x2="109.22" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="-45.72" x2="180.34" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="OSCILLATOR_SG-646PCE" gate="G$1" pin="VCC"/>
-<wire x1="99.06" y1="-22.86" x2="109.22" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-45.72" x2="180.34" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="OSCILLATOR_SG-646PCE" gate="G$1" pin="OUT_EN"/>
-<wire x1="63.5" y1="-27.94" x2="63.5" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="-43.18" x2="109.22" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="-22.86" x2="109.22" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="109.22" y="-22.86"/>
+<wire x1="134.62" y1="-50.8" x2="134.62" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-60.96" x2="180.34" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="-45.72" x2="180.34" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="180.34" y="-45.72"/>
 </segment>
 <segment>
 <pinref part="PSOC4200L" gate="G$1" pin="VDDIO"/>
@@ -2861,9 +2853,9 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="POT1" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="66.04" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="60.96" x2="5.08" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="60.96" x2="5.08" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="PSOC4200L" gate="G$1" pin="P0.6"/>
+<wire x1="22.86" y1="60.96" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="PSOC4200L" gate="G$1" pin="P0.7"/>
+<wire x1="2.54" y1="60.96" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LEVEL_SHIFT_EN1" class="0">
@@ -3366,14 +3358,14 @@ Source: www.kingbright.com</description>
 </net>
 <net name="LED5" class="0">
 <segment>
-<pinref part="PSOC4200L" gate="G$1" pin="P0.7"/>
-<wire x1="2.54" y1="38.1" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
-<label x="2.54" y="43.18" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="LED5" gate="G$1" pin="A"/>
 <wire x1="157.48" y1="-111.76" x2="157.48" y2="-109.22" width="0.1524" layer="91"/>
 <label x="157.48" y="-106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PSOC4200L" gate="G$1" pin="D+/P13.0"/>
+<wire x1="38.1" y1="-17.78" x2="43.18" y2="-17.78" width="0.1524" layer="91"/>
+<label x="43.18" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED8" class="0">
@@ -3410,6 +3402,18 @@ Source: www.kingbright.com</description>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="147.32" y1="-111.76" x2="147.32" y2="-109.22" width="0.1524" layer="91"/>
 <label x="147.32" y="-106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CLK_EXT" class="0">
+<segment>
+<pinref part="PSOC4200L" gate="G$1" pin="P0.6"/>
+<wire x1="5.08" y1="38.1" x2="5.08" y2="40.64" width="0.1524" layer="91"/>
+<label x="5.08" y="45.72" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="134.62" y1="-45.72" x2="132.08" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="OSCILLATOR_SG-646PCE" gate="G$1" pin="OUTPUT"/>
+<label x="124.46" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
