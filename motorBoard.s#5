@@ -167,38 +167,6 @@
 <text x="-2.54" y="11.43" size="1.27" layer="25">&gt;Name</text>
 <text x="-2.54" y="7.62" size="1.27" layer="27">&gt;Value</text>
 </package>
-<package name="FULL_CAN">
-<description>&lt;b&gt;Description:&lt;/b&gt; This is a generic layout for a Full Can package.
-&lt;p&gt;
-	&lt;b&gt;Issues to address:&lt;/b&gt;
-	&lt;ul&gt;
-		&lt;li&gt;These pads seem to be on the top, but shouldn't they be on the bottom?
-		&lt;li&gt;Hole diameter needs to be checked
-		&lt;li&gt;Double check overall units. I was assuming inches, but the data sheet I was referencing didn't specify units.
-	&lt;/ul&gt;
-&lt;/p&gt;</description>
-<wire x1="-10.16" y1="-6.35" x2="8.89" y2="-6.35" width="0.127" layer="51"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.127" layer="51"/>
-<wire x1="8.89" y1="6.35" x2="-8.89" y2="6.35" width="0.127" layer="51"/>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-6.35" width="0.127" layer="51"/>
-<wire x1="-8.89" y1="6.35" x2="-10.16" y2="5.08" width="0.127" layer="51" curve="90"/>
-<wire x1="10.16" y1="5.08" x2="8.89" y2="6.35" width="0.127" layer="51" curve="90"/>
-<wire x1="8.89" y1="-6.35" x2="10.16" y2="-5.08" width="0.127" layer="51" curve="90"/>
-<wire x1="-10.16" y1="-6.35" x2="8.89" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.127" layer="21"/>
-<wire x1="8.89" y1="6.35" x2="-8.89" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-6.35" width="0.127" layer="21"/>
-<wire x1="-8.89" y1="6.35" x2="-10.16" y2="5.08" width="0.127" layer="21" curve="90"/>
-<wire x1="10.16" y1="5.08" x2="8.89" y2="6.35" width="0.127" layer="21" curve="90"/>
-<wire x1="8.89" y1="-6.35" x2="10.16" y2="-5.08" width="0.127" layer="21" curve="90"/>
-<circle x="-8.89" y="-5.08" radius="0.635" width="0.127" layer="21"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.6" shape="square"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.6" shape="square"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.6" shape="square"/>
-<pad name="8" x="7.62" y="3.81" drill="0.6" shape="square"/>
-<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;Name</text>
-<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;Value</text>
-</package>
 <package name="SOIC3.9">
 <description>&lt;b&gt;Description:&lt;/b&gt; This footprint is a 3.9mm SOIC device.  It was created for the Microchip MCP2561 CAN transciever.  Foot print based on recommendation of datasheet.  Part of Husky Robotics 2017-2018 arm motor boards.</description>
 <wire x1="-3.175" y1="-1.5" x2="3.175" y2="-1.5" width="0.127" layer="21"/>
@@ -234,6 +202,51 @@
 <smd name="8" x="-3.81" y="4.3" dx="1.13" dy="2.44" layer="1"/>
 <text x="-3.81" y="1.27" size="1.27" layer="25">&gt;Name</text>
 <text x="-3.81" y="-2.54" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="4SOJ-5.08MM">
+<description>&lt;b&gt;Description:&lt;/b&gt; 4 pin SOJ 5.08mm pitch surface mount package (j leads). &lt;a href="https://support.epson.biz/td/api/doc_check.php?dl=brief_SG-636PCE_en.pdf"&gt; Source&lt;/a&gt;. Created for  EPSON SG-636PCE 32MHz external crystal oscillator. Part of the husky robotics team arm motor board 2017-2018.</description>
+<smd name="2" x="2.54" y="-2.3" dx="1.3" dy="2.1" layer="1"/>
+<smd name="3" x="2.54" y="2.3" dx="1.3" dy="2.1" layer="1"/>
+<smd name="4" x="-2.54" y="2.3" dx="1.3" dy="2.1" layer="1"/>
+<smd name="1" x="-2.54" y="-2.3" dx="1.3" dy="2.1" layer="1"/>
+<wire x1="-5" y1="4" x2="5" y2="4" width="0.127" layer="21"/>
+<wire x1="5" y1="4" x2="5" y2="-4" width="0.127" layer="21"/>
+<wire x1="5" y1="-4" x2="-5" y2="-4" width="0.127" layer="21"/>
+<wire x1="-5" y1="-4" x2="-5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1" x2="-4" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="-4" y1="0" x2="-5" y2="1" width="0.127" layer="21" curve="90"/>
+<wire x1="-5" y1="1" x2="-5" y2="4" width="0.127" layer="21"/>
+<circle x="4" y="-3" radius="0.34234375" width="0.127" layer="21"/>
+<text x="-3" y="5" size="1.27" layer="25">&gt;Name</text>
+<text x="-3" y="-7" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="16SOIC3.9">
+<description>&lt;b&gt;Description:&lt;/b&gt; This footprint is a 16 pin 3.9mm SOIC device.  It was created for the &lt;a href = "http://www.ti.com/lit/ds/symlink/tlv2544.pdf"&gt;Texas Instruments TLV2544ID.&lt;/a&gt;  Foot print based on recommendation of datasheet.  Part of Husky Robotics 2017-2018 arm motor boards.</description>
+<wire x1="-5.08" y1="-1.5" x2="5.08" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.5" x2="5.08" y2="1.5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.5" x2="-5.08" y2="1.5" width="0.127" layer="21"/>
+<smd name="3" x="-1.905" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="-0.635" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="0.635" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="1.905" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="11" x="1.905" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="12" x="0.635" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="13" x="-0.635" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="14" x="-1.905" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<wire x1="-5.08" y1="-1.5" x2="-5.08" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="-4.445" y1="0" x2="-5.08" y2="0.635" width="0.127" layer="21" curve="90"/>
+<wire x1="-5.08" y1="0.635" x2="-5.08" y2="1.5" width="0.127" layer="21"/>
+<text x="5.08" y="1.27" size="1.27" layer="25">&gt;Name</text>
+<text x="5.08" y="-1.27" size="1.27" layer="27">&gt;Value</text>
+<smd name="15" x="-3.175" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="16" x="-4.445" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="10" x="3.175" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="9" x="4.445" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="7" x="3.175" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="8" x="4.445" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="-3.175" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="1" x="-4.445" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -320,19 +333,6 @@
 <text x="-12.7" y="25.4" size="1.778" layer="95">&gt;Name</text>
 <text x="-12.7" y="22.86" size="1.778" layer="96">&gt;Value</text>
 </symbol>
-<symbol name="GENERIC_CRYSTAL_OSCILLATOR">
-<description>&lt;b&gt;Description:&lt;/b&gt; Generic crystal oscillator pinout, with some having a special function pin, others having not connection on that pin.  Created for Husky Robotics team 2017-2018, part of the arm motor board.</description>
-<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
-<pin name="OUTPUT" x="-17.78" y="2.54" visible="pin" length="middle" direction="out"/>
-<pin name="FUNCTION" x="-17.78" y="-2.54" visible="pin" length="middle"/>
-<pin name="VDD" x="17.78" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND" x="17.78" y="-2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;Name</text>
-<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;Value</text>
-</symbol>
 <symbol name="TCAN332">
 <description>&lt;b&gt;Description:&lt;/b&gt; This schematic is for the Microchip MCP2561 CAN transciever.  Created for the UW husky robotics team 2017-2018 as part of the arm motor board.  &lt;b&gt;It has not be tested.&lt;/b&gt;</description>
 <wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
@@ -361,6 +361,42 @@
 <pin name="1B" x="12.7" y="7.62" length="middle" rot="R180"/>
 <text x="-5.08" y="12.7" size="1.778" layer="95">&gt;Name</text>
 <text x="-5.08" y="-15.24" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="ESPSON_SG-646PCE_CRYSTAL_OSCILLATOR">
+<description>&lt;b&gt;Description:&lt;/b&gt;  EPSON SG-636PCE 32 MHz crystal oscillator pinout, 3.3V supply.  Created for Husky Robotics team 2017-2018, part of the arm motor board. &lt;a href="https://support.epson.biz/td/api/doc_check.php?dl=brief_SG-636PCE_en.pdf"&gt; Source.&lt;/a&gt;
+"</description>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<pin name="OUTPUT" x="-17.78" y="2.54" visible="pin" length="middle" direction="out"/>
+<pin name="OUT_EN" x="-17.78" y="-2.54" visible="pin" length="middle" direction="in"/>
+<pin name="VCC" x="17.78" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="17.78" y="-2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;Name</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="ADC_TLV2544ID">
+<wire x1="-10.16" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<pin name="A0" x="-15.24" y="12.7" length="middle"/>
+<pin name="A1" x="-15.24" y="10.16" length="middle"/>
+<pin name="A2" x="-15.24" y="7.62" length="middle"/>
+<pin name="A3" x="-15.24" y="5.08" length="middle"/>
+<pin name="VCC" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle"/>
+<pin name="SCLK" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="SDI" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="SDO" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="EOC/!INT" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="!CS" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="!CSTART" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="FS" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="!PWDN" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="REFP" x="-15.24" y="-12.7" length="middle"/>
+<pin name="REFM" x="-15.24" y="-10.16" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -469,25 +505,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="GENERIC_OSCILLATOR">
-<description>&lt;b&gt;Description: &lt;/b&gt; A generic full can oscillator based on Abracon full dip crystal oscillators.  Created for the husky robotics team 2017-2018, part of the arm motor board.</description>
-<gates>
-<gate name="G$1" symbol="GENERIC_CRYSTAL_OSCILLATOR" x="-12.7" y="10.16"/>
-</gates>
-<devices>
-<device name="GENERIC_FULL_CAN_OSCILLATOR" package="FULL_CAN">
-<connects>
-<connect gate="G$1" pin="FUNCTION" pad="1"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="OUTPUT" pad="8"/>
-<connect gate="G$1" pin="VDD" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TCAN332">
 <gates>
 <gate name="G$1" symbol="TCAN332" x="-12.7" y="5.08"/>
@@ -523,6 +540,55 @@
 <connect gate="G$1" pin="3B" pad="6"/>
 <connect gate="G$1" pin="4A" pad="4"/>
 <connect gate="G$1" pin="4B" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESPSON_SG-646PCE_CRYSTAL_OSCILLATOR">
+<description>&lt;b&gt;Description:&lt;/b&gt; 32MHz EPSON SG-646PCE crystal oscillator. &lt;a href="https://support.epson.biz/td/api/doc_check.php?dl=brief_SG-636PCE_en.pdf"&gt; Source.&lt;/a&gt; Created for the husky robotics team 2017-2018, arm motor board.</description>
+<gates>
+<gate name="G$1" symbol="ESPSON_SG-646PCE_CRYSTAL_OSCILLATOR" x="-20.32" y="2.54"/>
+</gates>
+<devices>
+<device name="EPSON_SG-646PCE_32MHZ" package="4SOJ-5.08MM">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+<connect gate="G$1" pin="OUT_EN" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADC_TLV2544ID">
+<gates>
+<gate name="G$1" symbol="ADC_TLV2544ID" x="-10.16" y="5.08"/>
+</gates>
+<devices>
+<device name="TI_ADC_TLV2544ID" package="16SOIC3.9">
+<connects>
+<connect gate="G$1" pin="!CS" pad="15"/>
+<connect gate="G$1" pin="!CSTART" pad="10"/>
+<connect gate="G$1" pin="!PWDN" pad="12"/>
+<connect gate="G$1" pin="A0" pad="6"/>
+<connect gate="G$1" pin="A1" pad="7"/>
+<connect gate="G$1" pin="A2" pad="8"/>
+<connect gate="G$1" pin="A3" pad="9"/>
+<connect gate="G$1" pin="EOC/!INT" pad="4"/>
+<connect gate="G$1" pin="FS" pad="13"/>
+<connect gate="G$1" pin="GND" pad="11"/>
+<connect gate="G$1" pin="REFM" pad="14"/>
+<connect gate="G$1" pin="REFP" pad="16"/>
+<connect gate="G$1" pin="SCLK" pad="3"/>
+<connect gate="G$1" pin="SDI" pad="2"/>
+<connect gate="G$1" pin="SDO" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -939,12 +1005,13 @@ Source: www.kingbright.com</description>
 <parts>
 <part name="U1" library="HuskyRobotics2017-18" deviceset="CY8C4247AZI-L485" device="TQFN"/>
 <part name="U$2" library="HuskyRobotics2017-18" deviceset="OKI-78SR" device="3SIP"/>
-<part name="U$4" library="HuskyRobotics2017-18" deviceset="GENERIC_OSCILLATOR" device="GENERIC_FULL_CAN_OSCILLATOR"/>
 <part name="SV2" library="con-amp-mt" library_urn="urn:adsk.eagle:library:123" deviceset="L04P" device="" package3d_urn="urn:adsk.eagle:package:5780/1"/>
 <part name="SV1" library="con-amp-mt" library_urn="urn:adsk.eagle:library:123" deviceset="L05P" device="" package3d_urn="urn:adsk.eagle:package:5784/1"/>
 <part name="LED1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="SML0603" package3d_urn="urn:adsk.eagle:package:13315/1"/>
 <part name="U$1" library="HuskyRobotics2017-18" deviceset="TCAN332" device="TCAN332"/>
 <part name="U$3" library="HuskyRobotics2017-18" deviceset="SMD4SW" device="SMD4SW"/>
+<part name="U$4" library="HuskyRobotics2017-18" deviceset="ESPSON_SG-646PCE_CRYSTAL_OSCILLATOR" device="EPSON_SG-646PCE_32MHZ"/>
+<part name="U$5" library="HuskyRobotics2017-18" deviceset="ADC_TLV2544ID" device="TI_ADC_TLV2544ID"/>
 </parts>
 <sheets>
 <sheet>
@@ -969,7 +1036,6 @@ Source: www.kingbright.com</description>
 <instances>
 <instance part="U1" gate="G$1" x="0" y="0"/>
 <instance part="U$2" gate="G$1" x="109.22" y="35.56"/>
-<instance part="U$4" gate="G$1" x="83.82" y="-25.4"/>
 <instance part="SV2" gate="-1" x="-76.2" y="-30.48"/>
 <instance part="SV2" gate="-2" x="-76.2" y="-35.56"/>
 <instance part="SV2" gate="-3" x="-76.2" y="-40.64"/>
@@ -982,6 +1048,8 @@ Source: www.kingbright.com</description>
 <instance part="LED1" gate="G$1" x="-124.46" y="48.26"/>
 <instance part="U$1" gate="G$1" x="33.02" y="-73.66"/>
 <instance part="U$3" gate="G$1" x="-12.7" y="-88.9"/>
+<instance part="U$4" gate="G$1" x="81.28" y="-25.4"/>
+<instance part="U$5" gate="G$1" x="-86.36" y="-109.22"/>
 </instances>
 <busses>
 <bus name="B$1">
@@ -1261,9 +1329,6 @@ Source: www.kingbright.com</description>
 <pinref part="U$2" gate="G$1" pin="OUTPUT+"/>
 <wire x1="109.22" y1="27.94" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="7.62" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="VDD"/>
-<wire x1="101.6" y1="-22.86" x2="109.22" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="-22.86" x2="109.22" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="-22.86" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
 <junction x="109.22" y="7.62"/>
 <wire x1="109.22" y1="7.62" x2="149.86" y2="7.62" width="0.1524" layer="91"/>
@@ -1293,6 +1358,13 @@ Source: www.kingbright.com</description>
 <pinref part="U$3" gate="G$1" pin="2A"/>
 <wire x1="-30.48" y1="-86.36" x2="-25.4" y2="-86.36" width="0.1524" layer="91"/>
 <junction x="-30.48" y="-86.36"/>
+<pinref part="U$4" gate="G$1" pin="VCC"/>
+<wire x1="99.06" y1="-22.86" x2="109.22" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="OUT_EN"/>
+<wire x1="63.5" y1="-27.94" x2="63.5" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-33.02" x2="109.22" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-33.02" x2="109.22" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="109.22" y="-22.86"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -1313,8 +1385,6 @@ Source: www.kingbright.com</description>
 <wire x1="43.18" y1="-5.08" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 <wire x1="104.14" y1="-5.08" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="GND"/>
-<wire x1="101.6" y1="-27.94" x2="104.14" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="-27.94" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="104.14" y="-5.08"/>
 <wire x1="104.14" y1="-5.08" x2="144.78" y2="-5.08" width="0.1524" layer="91"/>
@@ -1339,6 +1409,8 @@ Source: www.kingbright.com</description>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="45.72" y1="-66.04" x2="144.78" y2="-66.04" width="0.1524" layer="91"/>
 <junction x="144.78" y="-66.04"/>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<wire x1="99.06" y1="-27.94" x2="104.14" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -1351,10 +1423,10 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="OUTPUT"/>
 <pinref part="U1" gate="G$1" pin="D+/P13.0"/>
-<wire x1="66.04" y1="-22.86" x2="38.1" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-22.86" x2="38.1" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="-22.86" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="OUTPUT"/>
 </segment>
 </net>
 <net name="N$1" class="0">

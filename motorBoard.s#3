@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.3">
+<eagle version="8.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -437,24 +437,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="OKI-78SR">
-<description>&lt;b&gt;Description:&lt;/b&gt; This device is the Murata Power Solutions OKI-78SR DC-DC power regulator module, horizontal mount configuration.  Created for Husky Robotics Team 2017-2018, part of Arm Motor Board.</description>
-<gates>
-<gate name="G$1" symbol="OKI-78SR" x="-22.86" y="5.08"/>
-</gates>
-<devices>
-<device name="3SIP" package="3SIP">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="INPUT+" pad="1"/>
-<connect gate="G$1" pin="OUTPUT+" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TCAN332">
 <gates>
 <gate name="G$1" symbol="TCAN332" x="-12.7" y="5.08"/>
@@ -509,6 +491,42 @@
 <connect gate="G$1" pin="OUTPUT" pad="3"/>
 <connect gate="G$1" pin="OUT_EN" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OKI-78SR-3.3">
+<description>&lt;b&gt;Description:&lt;/b&gt; This device is the Murata Power Solutions OKI-78SR DC-DC power regulator module, horizontal mount configuration.  Created for Husky Robotics Team 2017-2018, part of Arm Motor Board.</description>
+<gates>
+<gate name="G$1" symbol="OKI-78SR" x="-22.86" y="5.08"/>
+</gates>
+<devices>
+<device name="3SIP" package="3SIP">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT+" pad="1"/>
+<connect gate="G$1" pin="OUTPUT+" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OKI-78SR-5">
+<description>&lt;b&gt;Description:&lt;/b&gt; This device is the Murata Power Solutions OKI-78SR DC-DC power regulator module, horizontal mount configuration.  Created for Husky Robotics Team 2017-2018, part of Arm Motor Board.</description>
+<gates>
+<gate name="G$1" symbol="OKI-78SR" x="-22.86" y="5.08"/>
+</gates>
+<devices>
+<device name="3SIP" package="3SIP">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT+" pad="1"/>
+<connect gate="G$1" pin="OUTPUT+" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -924,22 +942,20 @@ Source: www.kingbright.com</description>
 </classes>
 <parts>
 <part name="U1" library="HuskyRobotics2017-18" deviceset="CY8C4247AZI-L485" device="TQFN"/>
-<part name="U$2" library="HuskyRobotics2017-18" deviceset="OKI-78SR" device="3SIP"/>
 <part name="SV2" library="con-amp-mt" library_urn="urn:adsk.eagle:library:123" deviceset="L04P" device="" package3d_urn="urn:adsk.eagle:package:5780/1"/>
 <part name="SV1" library="con-amp-mt" library_urn="urn:adsk.eagle:library:123" deviceset="L05P" device="" package3d_urn="urn:adsk.eagle:package:5784/1"/>
-<part name="LED1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="SML0603" package3d_urn="urn:adsk.eagle:package:13315/1"/>
 <part name="U$1" library="HuskyRobotics2017-18" deviceset="TCAN332" device="TCAN332"/>
 <part name="U$3" library="HuskyRobotics2017-18" deviceset="SMD4SW" device="SMD4SW"/>
 <part name="U$4" library="HuskyRobotics2017-18" deviceset="ESPSON_SG-646PCE_CRYSTAL_OSCILLATOR" device="EPSON_SG-646PCE_32MHZ"/>
+<part name="LED2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="" package3d_urn="urn:adsk.eagle:package:13319/1"/>
+<part name="U$5" library="HuskyRobotics2017-18" deviceset="OKI-78SR-3.3" device="3SIP"/>
+<part name="U$2" library="HuskyRobotics2017-18" deviceset="OKI-78SR-5" device="3SIP"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="-22.86" y="-50.8" size="1.778" layer="91">JTAG</text>
 <text x="-83.82" y="88.9" size="1.778" layer="91">Each motor has 3 encoder or 1 analog input, 2 limit switches, and 1 pwm output. Analog or Encoder mode is controlled by DIP switch.</text>
-<text x="43.18" y="40.64" size="1.778" layer="91">PWM</text>
-<text x="40.64" y="48.26" size="1.778" layer="91">Motor 1 Encoder Inputs</text>
-<text x="40.64" y="60.96" size="1.778" layer="91">Motor 1 Limit Switches</text>
 <text x="-5.08" y="55.88" size="1.778" layer="91" rot="R90">Motor 2 PWM</text>
 <text x="-71.12" y="22.86" size="1.778" layer="91">Motor 3 PWM</text>
 <text x="-71.12" y="-2.54" size="1.778" layer="91">Motor 4 PWM</text>
@@ -954,7 +970,6 @@ Source: www.kingbright.com</description>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="0" y="0"/>
-<instance part="U$2" gate="G$1" x="109.22" y="35.56"/>
 <instance part="SV2" gate="-1" x="-76.2" y="-30.48"/>
 <instance part="SV2" gate="-2" x="-76.2" y="-35.56"/>
 <instance part="SV2" gate="-3" x="-76.2" y="-40.64"/>
@@ -964,30 +979,18 @@ Source: www.kingbright.com</description>
 <instance part="SV1" gate="-3" x="-137.16" y="-5.08"/>
 <instance part="SV1" gate="-4" x="-137.16" y="-10.16"/>
 <instance part="SV1" gate="-5" x="-137.16" y="-15.24"/>
-<instance part="LED1" gate="G$1" x="-124.46" y="48.26"/>
 <instance part="U$1" gate="G$1" x="33.02" y="-73.66"/>
 <instance part="U$3" gate="G$1" x="-12.7" y="-88.9"/>
 <instance part="U$4" gate="G$1" x="81.28" y="-25.4"/>
+<instance part="LED2" gate="G$1" x="-111.76" y="30.48"/>
+<instance part="U$5" gate="G$1" x="109.22" y="33.02"/>
+<instance part="U$2" gate="G$1" x="142.24" y="33.02"/>
 </instances>
 <busses>
 <bus name="B$1">
 <segment>
 <wire x1="-12.7" y1="-40.64" x2="-27.94" y2="-40.64" width="0.762" layer="92"/>
 <wire x1="-27.94" y1="-40.64" x2="-27.94" y2="-58.42" width="0.762" layer="92"/>
-</segment>
-</bus>
-<bus name="B$2">
-<segment>
-<wire x1="12.7" y1="40.64" x2="17.78" y2="40.64" width="0.762" layer="92"/>
-<wire x1="17.78" y1="40.64" x2="17.78" y2="48.26" width="0.762" layer="92"/>
-<wire x1="17.78" y1="48.26" x2="38.1" y2="48.26" width="0.762" layer="92"/>
-</segment>
-</bus>
-<bus name="B$3">
-<segment>
-<wire x1="7.62" y1="40.64" x2="10.16" y2="40.64" width="0.762" layer="92"/>
-<wire x1="10.16" y1="40.64" x2="10.16" y2="60.96" width="0.762" layer="92"/>
-<wire x1="10.16" y1="60.96" x2="38.1" y2="60.96" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$4">
@@ -1062,13 +1065,6 @@ Source: www.kingbright.com</description>
 <wire x1="-25.4" y1="-38.1" x2="-25.4" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P0.0"/>
-<wire x1="20.32" y1="38.1" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="40.64" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P1.0"/>
@@ -1085,34 +1081,6 @@ Source: www.kingbright.com</description>
 <segment>
 <wire x1="-38.1" y1="-2.54" x2="-50.8" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="P3.0"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P0.5"/>
-<wire x1="7.62" y1="40.64" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P0.4"/>
-<wire x1="10.16" y1="38.1" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P0.3"/>
-<wire x1="12.7" y1="38.1" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="B$2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P0.2"/>
-<wire x1="15.24" y1="38.1" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="P0.1"/>
-<wire x1="17.78" y1="38.1" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B$6" class="0">
@@ -1244,8 +1212,7 @@ Source: www.kingbright.com</description>
 <wire x1="45.72" y1="0" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-2.54" x2="38.1" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="45.72" y="0"/>
-<pinref part="U$2" gate="G$1" pin="OUTPUT+"/>
-<wire x1="109.22" y1="27.94" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="25.4" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="7.62" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="-22.86" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
 <junction x="109.22" y="7.62"/>
@@ -1283,6 +1250,7 @@ Source: www.kingbright.com</description>
 <wire x1="63.5" y1="-33.02" x2="109.22" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="-33.02" x2="109.22" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="109.22" y="-22.86"/>
+<pinref part="U$5" gate="G$1" pin="OUTPUT+"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -1301,11 +1269,11 @@ Source: www.kingbright.com</description>
 <wire x1="43.18" y1="10.16" x2="38.1" y2="10.16" width="0.1524" layer="91"/>
 <junction x="43.18" y="5.08"/>
 <wire x1="43.18" y1="-5.08" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND"/>
-<wire x1="104.14" y1="-5.08" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-5.08" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="-27.94" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="104.14" y="-5.08"/>
-<wire x1="104.14" y1="-5.08" x2="144.78" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-5.08" x2="137.16" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-5.08" x2="144.78" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="-5.08" x2="144.78" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="-66.04" x2="144.78" y2="-119.38" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="-119.38" x2="-43.18" y2="-119.38" width="0.1524" layer="91"/>
@@ -1329,14 +1297,22 @@ Source: www.kingbright.com</description>
 <junction x="144.78" y="-66.04"/>
 <pinref part="U$4" gate="G$1" pin="GND"/>
 <wire x1="99.06" y1="-27.94" x2="104.14" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="GND"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="137.16" y1="25.4" x2="137.16" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="137.16" y="-5.08"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="INPUT+"/>
-<wire x1="99.06" y1="27.94" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="25.4" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="20.32" x2="83.82" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="20.32" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="INPUT+"/>
+<pinref part="U$2" gate="G$1" pin="INPUT+"/>
+<wire x1="99.06" y1="20.32" x2="132.08" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="20.32" x2="132.08" y2="25.4" width="0.1524" layer="91"/>
+<junction x="99.06" y="20.32"/>
 </segment>
 </net>
 <net name="N$15" class="0">

@@ -220,34 +220,6 @@
 <text x="-3" y="5" size="1.27" layer="25">&gt;Name</text>
 <text x="-3" y="-7" size="1.27" layer="27">&gt;Value</text>
 </package>
-<package name="16SOIC3.9">
-<description>&lt;b&gt;Description:&lt;/b&gt; This footprint is a 16 pin 3.9mm SOIC device.  It was created for the &lt;a href = "http://www.ti.com/lit/ds/symlink/tlv2544.pdf"&gt;Texas Instruments TLV2544ID.&lt;/a&gt;  Foot print based on recommendation of datasheet.  Part of Husky Robotics 2017-2018 arm motor boards.</description>
-<wire x1="-5.08" y1="-1.5" x2="5.08" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-1.5" x2="5.08" y2="1.5" width="0.127" layer="21"/>
-<wire x1="5.08" y1="1.5" x2="-5.08" y2="1.5" width="0.127" layer="21"/>
-<smd name="3" x="-1.905" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="4" x="-0.635" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="5" x="0.635" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="6" x="1.905" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="11" x="1.905" y="2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="12" x="0.635" y="2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="13" x="-0.635" y="2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="14" x="-1.905" y="2.7" dx="0.6" dy="1.55" layer="1"/>
-<wire x1="-5.08" y1="-1.5" x2="-5.08" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="-4.445" y1="0" x2="-5.08" y2="0.635" width="0.127" layer="21" curve="90"/>
-<wire x1="-5.08" y1="0.635" x2="-5.08" y2="1.5" width="0.127" layer="21"/>
-<text x="5.08" y="1.27" size="1.27" layer="25">&gt;Name</text>
-<text x="5.08" y="-1.27" size="1.27" layer="27">&gt;Value</text>
-<smd name="15" x="-3.175" y="2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="16" x="-4.445" y="2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="10" x="3.175" y="2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="9" x="4.445" y="2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="7" x="3.175" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="8" x="4.445" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="2" x="-3.175" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
-<smd name="1" x="-4.445" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
-</package>
 </packages>
 <symbols>
 <symbol name="CY8C4247AZI-L485">
@@ -375,28 +347,6 @@
 <pin name="GND" x="17.78" y="-2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
 <text x="-5.08" y="7.62" size="1.778" layer="95">&gt;Name</text>
 <text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;Value</text>
-</symbol>
-<symbol name="ADC_TLV2544ID">
-<wire x1="-10.16" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
-<pin name="A0" x="-15.24" y="12.7" length="middle"/>
-<pin name="A1" x="-15.24" y="10.16" length="middle"/>
-<pin name="A2" x="-15.24" y="7.62" length="middle"/>
-<pin name="A3" x="-15.24" y="5.08" length="middle"/>
-<pin name="VCC" x="-15.24" y="-2.54" length="middle"/>
-<pin name="GND" x="-15.24" y="-5.08" length="middle"/>
-<pin name="SCLK" x="15.24" y="15.24" length="middle" rot="R180"/>
-<pin name="SDI" x="15.24" y="12.7" length="middle" rot="R180"/>
-<pin name="SDO" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="EOC/!INT" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="!CS" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="!CSTART" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="FS" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="!PWDN" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="REFP" x="-15.24" y="-12.7" length="middle"/>
-<pin name="REFM" x="-15.24" y="-10.16" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -559,36 +509,6 @@
 <connect gate="G$1" pin="OUTPUT" pad="3"/>
 <connect gate="G$1" pin="OUT_EN" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ADC_TLV2544ID">
-<gates>
-<gate name="G$1" symbol="ADC_TLV2544ID" x="-10.16" y="5.08"/>
-</gates>
-<devices>
-<device name="TI_ADC_TLV2544ID" package="16SOIC3.9">
-<connects>
-<connect gate="G$1" pin="!CS" pad="15"/>
-<connect gate="G$1" pin="!CSTART" pad="10"/>
-<connect gate="G$1" pin="!PWDN" pad="12"/>
-<connect gate="G$1" pin="A0" pad="6"/>
-<connect gate="G$1" pin="A1" pad="7"/>
-<connect gate="G$1" pin="A2" pad="8"/>
-<connect gate="G$1" pin="A3" pad="9"/>
-<connect gate="G$1" pin="EOC/!INT" pad="4"/>
-<connect gate="G$1" pin="FS" pad="13"/>
-<connect gate="G$1" pin="GND" pad="11"/>
-<connect gate="G$1" pin="REFM" pad="14"/>
-<connect gate="G$1" pin="REFP" pad="16"/>
-<connect gate="G$1" pin="SCLK" pad="3"/>
-<connect gate="G$1" pin="SDI" pad="2"/>
-<connect gate="G$1" pin="SDO" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1011,7 +931,6 @@ Source: www.kingbright.com</description>
 <part name="U$1" library="HuskyRobotics2017-18" deviceset="TCAN332" device="TCAN332"/>
 <part name="U$3" library="HuskyRobotics2017-18" deviceset="SMD4SW" device="SMD4SW"/>
 <part name="U$4" library="HuskyRobotics2017-18" deviceset="ESPSON_SG-646PCE_CRYSTAL_OSCILLATOR" device="EPSON_SG-646PCE_32MHZ"/>
-<part name="U$5" library="HuskyRobotics2017-18" deviceset="ADC_TLV2544ID" device="TI_ADC_TLV2544ID"/>
 </parts>
 <sheets>
 <sheet>
@@ -1049,7 +968,6 @@ Source: www.kingbright.com</description>
 <instance part="U$1" gate="G$1" x="33.02" y="-73.66"/>
 <instance part="U$3" gate="G$1" x="-12.7" y="-88.9"/>
 <instance part="U$4" gate="G$1" x="81.28" y="-25.4"/>
-<instance part="U$5" gate="G$1" x="-86.36" y="-109.22"/>
 </instances>
 <busses>
 <bus name="B$1">
