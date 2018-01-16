@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Users/Dylan/Documents/GitHub/RoboticsMotorBoardRev1/motorBoard.brd
+Job           : C:/Users/Default User.DESKTOP-J8EE37M/Documents/eagle/RoboticsMotorBoardRev1/RoboticsMotorBoardRev1/motorBoard.brd
 
-Start at      : 03:15:54 (1/11/2018)
-End at        : 03:17:36 (1/11/2018)
-Elapsed time  : 00:01:39
+Start at      : 10:51:10 (1/13/2018)
+End at        : 10:54:56 (1/13/2018)
+Elapsed time  : 00:03:29
 
-Signals       :    84   RoutingGrid: 6 mil  Layers: 2
-Connections   :   193   predefined:  0 ( 0 Vias )
+Signals       :    85   RoutingGrid: 6 mil  Layers: 2
+Connections   :   225   predefined:  176 ( 33 Vias )
 
-Router memory :   5391648
+Router memory :   1901824
 
-Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8
+Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
 
-Time per pass     :  00:00:05  00:00:17  00:00:10  00:00:08  00:00:09  00:00:09  00:00:11  00:00:10  00:00:10  00:00:10
-Number of Ripups  :         0         7         0         0         0         0         0         0         0         0
-max. Level        :         0         1         0         0         0         0         0         0         0         0
-max. Total        :         0        39         0         0         0         0         0         0         0         0
+Time per pass     :  00:02:03  00:00:18  00:00:07  00:00:07  00:00:07  00:00:06  00:00:05  00:00:06  00:00:05  00:00:05  00:00:05  00:00:05  00:00:05  00:00:05
+Number of Ripups  :         0        19         0         0         0         0         0         0         0         0         0         0         0         0
+max. Level        :         0         2         0         0         0         0         0         0         0         0         0         0         0         0
+max. Total        :         0         4         0         0         0         0         0         0         0         0         0         0         0         0
 
-Routed            :        63       193       190       192       192       192       193       193       193       193
-Vias              :         0       117       127       122       107        96        99        99        96        96
-Resolution        :    32.6 %   100.0 %    98.4 %    99.5 %    99.5 %    99.5 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         3        49        49        49        49        49        49        49        49        49        49        49        49        49
+Vias              :         0       117       122       116       113       108       106       106        98        96        96        96        92        92
+Resolution        :    79.6 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 100.0% finished
+Final             : 94.2% finished. Polygons may have fallen apart.
